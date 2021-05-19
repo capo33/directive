@@ -1,0 +1,26 @@
+<!-- <div class="container">
+    <button class="btn btn-warning btn-lg" (click)= 'myToggle()'>Display Details</button>
+    <p *ngIf = 'show'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora provident voluptatum earum tenetur illum delectus harum inventore deleniti obcaecati hic reprehenderit eos odit, quasi ipsa? Delectus velit dolorum eum.</p>
+    <h6
+    *ngFor="let arr of myArray"
+    [ngStyle]="{backgroundColor:arr >=5 ? 'black' : 'tranparent'}"
+    [ngClass] = "{special: arr >= 5}">{{arr}}</h6>
+</div> -->
+
+<div class="container">
+    <div class="row">
+        <button 
+        class="btn btn-info"
+        (click) = "onToggleDetails()">Display Details</button>
+        <div class="col-xs-12">
+            
+            <p  *ngIf=show>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam tempora provident voluptatum earum tenetur illum delectus harum inventore deleniti obcaecati hic reprehenderit eos odit, quasi ipsa? Delectus velit dolorum eum.</p>
+        </div>
+    </div>
+    <h6
+    *ngFor = "let loggy of log"
+    [ngStyle] = "{backgroundColor:loggy ===5 ? 'green' : 'tranparent'}"
+    [ngClass] = "{'white-text': loggy ===5}" >{{loggy}}
+    </h6>
+</div>
+  
